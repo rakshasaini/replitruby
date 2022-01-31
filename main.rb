@@ -13,7 +13,9 @@ class Student
   def to_s
     # "First Name is #{@first_name}, Last Name #{@last_name}, E-Mail id is: #{@email}, User Name: #{@user_name}, Password is: #{@password} "
 
-    "First Name is #{@first_name}, Last Name #{@last_name}, E-Mail id is: #{@email}, User Name: #{@user_name}"
+    # "First Name is #{@first_name}, Last Name #{@last_name}, E-Mail id is: #{@email}, User Name: #{@user_name}"
+
+    "First Name is #{@first_name}, Last Name #{@last_name}, The User name is: #{@user_name}, E-Mail id is: #{@email}"
   end
 end
 

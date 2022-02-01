@@ -33,17 +33,16 @@ end
 
 #get the list of username
 def create_users_details(users_details)
-  puts "Now User Names:"
-  users_details.each do |user_names|
-    puts user_names[:username]
-  end
-  puts "Now Passwords"
-  users_details.each do |user_pass|
-    puts user_pass[:password]
+  users_details.each do |user_records|
+    puts "The user name and password one by one is: "
+    puts "user name is: #{user_records[:username]}"
+    # puts user_records[:username]
+    puts "user password is: #{user_records[:password]}"
+    # puts user_records[:password]
   end
 end
 puts "The all users are"
-create_users_details(users)
+puts create_users_details(users)
 
 #The value in create_username_users and create_secure_users are same check this:
 # puts create_secure_users(users)

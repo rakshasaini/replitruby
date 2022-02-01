@@ -29,6 +29,13 @@ puts my_password
 puts my_password1
 puts my_password2
 
+#compare to check password
+puts my_password == my_password1
+puts my_password2 == my_password1
+
+puts my_password == "my password"
+
+
 # puts my_password
 # puts my_password.version              #=> "2a"
 # puts my_password.cost                 #=> 12

@@ -7,12 +7,32 @@ end
 
 require 'bcrypt'
 
+users = [
+        {username: "Ram", password: "pass1"},
+        {username: "Raksha", password: "pass2"},
+        {username: "jony", password: "passjony"},
+        {username: "love", password: "care"}
+]
+
 def create_hash_digest(pass)
   BCrypt::Password.create(pass)
 end
 
-new_password = create_hash_digest("password1111")
+def create_hash_verify(password)
+  BCrypt::Password.new(password)
+end
 
-puts new_password
-puts new_password == "password1111"
-puts new_password == "pass123"
+def create_secure_users(list_of_users)
+  list_of_users.each do |user_records|
+    puts user_records[:password]
+  end
+end
+
+create_secure_users(users)
+
+
+
+# new_password = create_hash_digest("password1111")
+# puts new_password
+# puts new_password == "password1111"
+# puts new_password == "pass123"
